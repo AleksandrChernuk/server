@@ -31,3 +31,7 @@ app.listen(port, (err) => {
   }
   console.log("ok");
 });
+
+app.get("/", (req, res) => {
+  res.send(`<h1>My server</h1>`);
+});
